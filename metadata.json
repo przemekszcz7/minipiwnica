@@ -1,0 +1,6 @@
+{
+  "name": "MINI Piwnica - Kebab Kowale Oleckie",
+  "description": "Oficjalna strona MINI Piwnica w Kowalach Oleckich — rzemieślniczy kebab, chrupiące frytki, piwo i uliczny klimat.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

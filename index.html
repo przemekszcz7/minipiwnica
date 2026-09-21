@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>MINI Piwnica - Kebab Kowale Oleckie</title>
+  <meta name="description" content="MINI Piwnica w Kowalach Oleckich — rzemieślniczy kebab, chrupiące frytki, piwo i uliczna energia. Sprawdź pełne menu i zamów: 535 388 205.">
+  
+  <!-- OpenGraph / Social Meta -->
+  <meta property="og:title" content="MINI Piwnica - Kebab Kowale Oleckie">
+  <meta property="og:description" content="Kebab z charakterem — rzemieślnicze mięso, wielkie porcje, świeże składniki i luźny uliczny klimat.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://i.postimg.cc/pLBbkD8r/792091156-122151606885055420-8290531806082557046-n.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="https://i.postimg.cc/wvXBkt6P/555520319-31668390972776874-2077209698299663328-n.jpg">
+
+  <!-- Preload Critical Hero Image for instant loading -->
+  <link rel="preload" as="image" href="https://i.postimg.cc/pLBbkD8r/792091156-122151606885055420-8290531806082557046-n.jpg" fetchpriority="high">
+
+  <!-- Google Fonts: Chakra Petch (angular with full Polish support), Oswald, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,500;0,600;0,700;1,700&family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800&display=swap&subset=latin,latin-ext" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. NAWIGACJA
+       ========================================================================== -->
+  <header id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-link" id="nav-brand" aria-label="MINI Piwnica Strona Główna">
+        <img 
+          src="https://i.postimg.cc/wvXBkt6P/555520319-31668390972776874-2077209698299663328-n.jpg" 
+          alt="MINI Piwnica Logo" 
+          class="brand-logo"
+          width="44"
+          height="44"
+          loading="eager"
+        >
+        <div class="brand-text">
+          <span class="brand-title">MINI PIWNICA</span>
+          <span class="brand-subtitle">Kowale Oleckie</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav>
+        <ul class="nav-menu" id="desktop-menu">
+          <li class="nav-item"><a href="#menu">Menu</a></li>
+          <li class="nav-item"><a href="#o-nas">O nas</a></li>
+          <li class="nav-item"><a href="#galeria">Galeria</a></li>
+          <li class="nav-item"><a href="#godziny">Godziny</a></li>
+          <li class="nav-item"><a href="#opinie">Opinie</a></li>
+          <li class="nav-item"><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Call button shown on desktop only, hidden on mobile -->
+        <a href="tel:535388205" class="btn btn-red nav-phone-btn" id="nav-cta-btn">
+          <i data-lucide="phone"></i> <span class="phone-nowrap">535&nbsp;388&nbsp;205</span>
+        </a>
+        <button class="nav-hamburger" id="hamburger-btn" aria-label="Otwórz menu nawigacyjne" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <ul class="mobile-nav-list" id="mobile-nav-list">
+      <li><a href="#menu" class="mobile-link">MENU</a></li>
+      <li><a href="#o-nas" class="mobile-link">O NAS</a></li>
+      <li><a href="#galeria" class="mobile-link">GALERIA</a></li>
+      <li><a href="#godziny" class="mobile-link">GODZINY</a></li>
+      <li><a href="#opinie" class="mobile-link">OPINIE</a></li>
+      <li><a href="#kontakt" class="mobile-link">KONTAKT</a></li>
+    </ul>
+    <a href="tel:535388205" class="btn btn-red" style="width: 100%; max-width: 280px;">
+      <i data-lucide="phone"></i> ZADZWOŃ:&nbsp;<span class="phone-nowrap">535&nbsp;388&nbsp;205</span>
+    </a>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         2. HERO SECTION
+         ========================================================================== -->
+    <section id="hero">
+      <div class="container hero-content">
+        <div class="hero-pill">
+          <i data-lucide="map-pin"></i> Kowale Oleckie · ul. Kościuszki 42
+        </div>
+        
+        <h1 class="hero-title" id="main-heading">MINI PIWNICA</h1>
+        <p class="hero-subtitle">mniejsza wersja Piwnicy Gołdap</p>
+        
+        <!-- Key Features List -->
+        <div class="hero-features" id="hero-features-list">
+          <div class="hero-feature-item">
+            <i data-lucide="utensils"></i> 100% Rzemieślnicze mięso (kura & wół)
+          </div>
+          <div class="hero-feature-item">
+            <i data-lucide="sparkles"></i> Chrupiące frytki & autorskie sosy
+          </div>
+          <div class="hero-feature-item">
+            <i data-lucide="beer"></i> Zimne piwo na miejscu
+          </div>
+          <div class="hero-feature-item">
+            <i data-lucide="zap"></i> Duże, uczciwe porcje
+          </div>
+          <div class="hero-feature-item">
+            <i data-lucide="flame"></i> Uliczny, bezkompromisowy klimat
+          </div>
+        </div>
+
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-red" id="hero-cta-menu">
+            <i data-lucide="file-text"></i> Zobacz Pełne Menu
+          </a>
+          <a href="tel:535388205" class="btn btn-outline-red" id="hero-cta-call">
+            <i data-lucide="phone"></i> <span class="phone-nowrap">535&nbsp;388&nbsp;205</span>
+          </a>
+        </div>
+
+        <div class="hero-scroll-indicator" aria-hidden="true">
+          <span>ZJEDZ COŚ DOBREGO</span>
+          <div class="scroll-line-container">
+            <div class="scroll-line-pulse"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Graffiti Spray Drip Divider -->
+    <svg class="spray-drip-divider" viewBox="0 0 1200 28" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,0 L1200,0 L1200,8 Q1150,22 1120,9 Q1060,26 1030,8 Q980,24 950,7 Q900,28 870,9 Q800,22 760,8 Q700,27 670,9 Q600,24 570,8 Q500,28 470,9 Q410,23 380,8 Q320,27 290,9 Q230,23 200,7 Q140,25 110,8 Q50,22 0,7 Z"></path>
+    </svg>
+
+    <!-- ==========================================================================
+         3. TICKER (MARQUEE)
+         ========================================================================== -->
+    <div class="ticker-bar" aria-hidden="true">
+      <div class="ticker-track">
+        <div class="ticker-content">
+          <span>MINI PIWNICA</span><span class="ticker-bullet">★</span>
+          <span>RZEMIEŚLNICZY KEBAB</span><span class="ticker-bullet">★</span>
+          <span>KURCZAK & WOŁOWINA</span><span class="ticker-bullet">★</span>
+          <span>ZIMNE PIWO</span><span class="ticker-bullet">★</span>
+          <span>KOWALE OLECKIE</span><span class="ticker-bullet">★</span>
+          <span>ODBIÓR NA TELEFON: 535 388 205</span><span class="ticker-bullet">★</span>
+          <span>BEZKOMPROMISOWA SZAMA</span><span class="ticker-bullet">★</span>
+          <span>DUŻE PORCJE</span><span class="ticker-bullet">★</span>
+        </div>
+        <div class="ticker-content">
+          <span>MINI PIWNICA</span><span class="ticker-bullet">★</span>
+          <span>RZEMIEŚLNICZY KEBAB</span><span class="ticker-bullet">★</span>
+          <span>KURCZAK & WOŁOWINA</span><span class="ticker-bullet">★</span>
+          <span>ZIMNE PIWO</span><span class="ticker-bullet">★</span>
+          <span>KOWALE OLECKIE</span><span class="ticker-bullet">★</span>
+          <span>ODBIÓR NA TELEFON: 535 388 205</span><span class="ticker-bullet">★</span>
+          <span>BEZKOMPROMISOWA SZAMA</span><span class="ticker-bullet">★</span>
+          <span>DUŻE PORCJE</span><span class="ticker-bullet">★</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hazard separator -->
+    <div class="hazard-stripe" aria-hidden="true"></div>
+
+    <!-- ==========================================================================
+         4. MENU SECTION
+         ========================================================================== -->
+    <section id="menu">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">PEŁNE MENU</h2>
+          <div class="spray-underline"></div>
+          <p class="section-subtitle">
+            Rzemieślnicze mięso (kurczak lub wołowina), chrupiące dodatki i autorskie kompozycje. 
+            <br><span class="graffiti-tag">#SZAMA_BEZ_ŚCIEMY</span>
+          </p>
+        </div>
+
+        <!-- 4.1. KEBAB TRADYCYJNY -->
+        <div class="menu-category" id="kat-tradycyjny">
+          <div class="menu-category-header">
+            <h3 class="menu-category-title"><i data-lucide="utensils"></i> KEBAB TRADYCYJNY</h3>
+            <span class="menu-category-badge">KLASYKI GATUNKU</span>
+          </div>
+
+          <div class="traditional-grid">
+            <!-- ROLLO -->
+            <div class="trad-card" id="card-rollo">
+              <div class="trad-card-header">
+                <div>
+                  <h4 class="trad-card-name">Rollo</h4>
+                  <span class="trad-card-type">Cienka chrupiąca tortilla</span>
+                </div>
+                <span class="graffiti-tag">TOP</span>
+              </div>
+              <p class="trad-card-desc">
+                Świeże warzywa (kapusta, ogórek, pomidor), sosy do wyboru oraz rzemieślnicze mięso zwinięte w przypieczoną tortillę.
+              </p>
+              <div class="variant-table">
+                <div class="variant-row">
+                  <div class="variant-left">
+                    <span class="variant-name">Małe</span>
+                    <span class="variant-gram">(ok. 140g mięsa)</span>
+                  </div>
+                  <span class="variant-price">26,00 zł</span>
+                </div>
+                <div class="variant-row">
+                  <div class="variant-left">
+                    <span class="variant-name">Duże</span>
+                    <span class="variant-gram">(ok. 210g mięsa)</span>
+                  </div>
+                  <span class="variant-price">32,00 zł</span>
+                </div>
+                <div class="variant-row">
+                  <div class="variant-left">
+                    <span class="variant-name">Fryto</span>
+                    <span class="variant-gram">(ok. 200g mięsa + frytki)</span>
+                  </div>
+                  <span class="variant-price">32,00 zł</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PITA -->
+            <div class="trad-card" id="card-pita">
+              <div class="trad-card-header">
+                <div>
+                  <h4 class="trad-card-name">Pita</h4>
+                  <span class="trad-card-type">Klasyczne ciasto pita</span>
+                </div>
+                <span class="graffiti-tag">OGIEŃ</span>
+              </div>
+              <p class="trad-card-desc">
+                Tradycyjna, gorąca pita wypełniona po brzegi soczystym mięsem, chrupiącą surówką i wyrazistymi sosami.
+              </p>
+              <div class="variant-table">
+                <div class="variant-row">
+                  <div class="variant-left">
+                    <span class="variant-name">Małe</span>
+                    <span class="variant-gram">(ok. 140g mięsa)</span>
+                  </div>
+                  <span class="variant-price">26,00 zł</span>
+                </div>
+                <div class="variant-row">
+                  <div class="variant-left">
+                    <span class="variant-name">Duże</span>
+                    <span class="variant-gram">(ok. 210g mięsa)</span>
+                  </div>
+                  <span class="variant-price">32,00 zł</span>
+                </div>
+                <div class="variant-row">
+                  <div class="variant-left">
+                    <span class="variant-name">Fryto</span>
+                    <span class="variant-gram">(ok. 200g mięsa + frytki)</span>
+                  </div>
+                  <span class="variant-price">32,00 zł</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- BUŁKA -->
+            <div class="trad-card" id="card-bulka">
+              <div class="trad-card-header">
+                <div>
+                  <h4 class="trad-card-name">Bułka</h4>
+                  <span class="trad-card-type">Opiekana chrupiąca bułka</span>
+                </div>
+                <span class="graffiti-tag">CHRUP</span>
+              </div>
+              <p class="trad-card-desc">
+                Złocista, grillowana chrupiąca bułka, świeże warzywa, bogata porcja mięsa z rusztu i sosy.
+              </p>
+              <div class="variant-table">
+                <div class="variant-row">
+                  <div class="variant-left">
+                    <span class="variant-name">Małe</span>
+                    <span class="variant-gram">(ok. 140g mięsa)</span>
+                  </div>
+                  <span class="variant-price">26,00 zł</span>
+                </div>
+                <div class="variant-row">
+                  <div class="variant-left">
+                    <span class="variant-name">Duże</span>
+                    <span class="variant-gram">(ok. 210g mięsa)</span>
+                  </div>
+                  <span class="variant-price">32,00 zł</span>
+                </div>
+                <div class="variant-row">
+                  <div class="variant-left">
+                    <span class="variant-name">Fryto</span>
+                    <span class="variant-gram">(ok. 200g mięsa + frytki)</span>
+                  </div>
+                  <span class="variant-price">32,00 zł</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4.2. ROLLO NA WYPASIE -->
+        <div class="menu-category" id="kat-wypas">
+          <div class="premium-wrapper">
+            <div class="menu-category-header" style="border-color: var(--red-highlight);">
+              <div>
+                <h3 class="menu-category-title" style="color: var(--red-highlight);">
+                  <i data-lucide="flame"></i> ROLLO NA WYPASIE
+                </h3>
+                <span style="font-size: 0.88rem; color: var(--text-muted);">
+                  Nasza flagowa seria z autorskimi dodatkami
+                </span>
+              </div>
+              <span class="graffiti-tag" style="font-size: 1.4rem;"><i data-lucide="star"></i> HIT LOKALU <i data-lucide="star"></i></span>
+            </div>
+
+            <div class="premium-grid">
+              <!-- FRYTOL -->
+              <div class="premium-card" id="menu-frytol">
+                <div>
+                  <div class="menu-card-top">
+                    <h4 class="menu-item-name">Frytol</h4>
+                    <span class="menu-price-tag">34,00 zł</span>
+                  </div>
+                  <p class="menu-item-desc">
+                    <span class="ingredient-highlight">Mięso ok. 200g</span>, chrupiące frytki, <span class="ingredient-highlight">3x ser cheddar</span>, prażona cebulka, gęsty sos serowy.
+                  </p>
+                </div>
+                <span class="menu-meta-gram"><i data-lucide="sparkles"></i> potężny serowo-frytkowy sztos</span>
+              </div>
+
+              <!-- MEKSIKANO -->
+              <div class="premium-card" id="menu-meksikano">
+                <div>
+                  <div class="menu-card-top">
+                    <h4 class="menu-item-name">Meksikano</h4>
+                    <span class="menu-price-tag">34,00 zł</span>
+                  </div>
+                  <p class="menu-item-desc">
+                    <span class="ingredient-highlight">Mięso ok. 200g</span>, sałata, pomidor, pikle, prażona cebula, nachosy, jalapeño, sos mango-majo, sos serowy.
+                  </p>
+                </div>
+                <span class="menu-meta-gram"><i data-lucide="flame"></i> ostry, chrupiący i wyrazisty</span>
+              </div>
+
+              <!-- SEROWY -->
+              <div class="premium-card" id="menu-serowy">
+                <div>
+                  <div class="menu-card-top">
+                    <h4 class="menu-item-name">Serowy</h4>
+                    <span class="menu-price-tag">35,00 zł</span>
+                  </div>
+                  <p class="menu-item-desc">
+                    <span class="ingredient-highlight">Mięso ok. 200g</span>, sałata, pomidor, ogórek, <span class="ingredient-highlight">3x cheddar</span>, prażona cebula, aksamitny sos serowy.
+                  </p>
+                </div>
+                <span class="menu-meta-gram"><i data-lucide="sparkles"></i> raj dla serożerców</span>
+              </div>
+
+              <!-- AMERYKAŃSKI -->
+              <div class="premium-card" id="menu-amerykanski">
+                <div>
+                  <div class="menu-card-top">
+                    <h4 class="menu-item-name">Amerykański</h4>
+                    <span class="menu-price-tag">32,00 zł</span>
+                  </div>
+                  <p class="menu-item-desc">
+                    <span class="ingredient-highlight">Mięso ok. 200g</span>, frytki prosto z pieca, sos. Prosto, konkretnie i do syta.
+                  </p>
+                </div>
+                <span class="menu-meta-gram"><i data-lucide="sparkles"></i> klasyk w stylu USA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4.3. ZESTAWY I DODATKOWE PROPOZYCJE -->
+        <div class="menu-category" id="kat-zestawy">
+          <div class="menu-category-header">
+            <h3 class="menu-category-title"><i data-lucide="package"></i> ZESTAWY I BOXY</h3>
+            <span class="menu-category-badge">KONKRETNE PORCJE</span>
+          </div>
+
+          <div class="menu-grid">
+            <!-- PARTY BOX -->
+            <div class="menu-card" id="menu-party-box" style="border-left: 3px solid var(--red-highlight);">
+              <div>
+                <div class="menu-card-top">
+                  <div>
+                    <h4 class="menu-item-name">Party Box</h4>
+                    <span class="menu-meta-gram">Dla 2 osób / na ekipę</span>
+                  </div>
+                  <span class="menu-price-tag">65,00 zł</span>
+                </div>
+                <p class="menu-item-desc">
+                  Mały zestaw: ok. 200g soczysta wołowina, ok. 200g kurczak, porcja frytek, krążki cebulowe, sałatka, dwa sosy do wyboru.
+                </p>
+              </div>
+              <span class="menu-meta-gram"><i data-lucide="scale"></i> ponad 400g samego mięsa + dodatki</span>
+            </div>
+
+            <!-- SAMO MIĘSO -->
+            <div class="menu-card" id="menu-samo-mieso">
+              <div>
+                <div class="menu-card-top">
+                  <div>
+                    <h4 class="menu-item-name">Samo mięso</h4>
+                    <span class="menu-meta-gram">Dla prawdziwych mięsożerców</span>
+                  </div>
+                  <span class="menu-price-tag">34,00 zł</span>
+                </div>
+                <p class="menu-item-desc">
+                  Pita, tortilla lub bułka, ok. 310g samego mięsa, sos do wyboru. Czyste mięso bez zbędnych wypełniaczy.
+                </p>
+              </div>
+              <span class="menu-meta-gram"><i data-lucide="scale"></i> ok. 310g czystego mięsa</span>
+            </div>
+
+            <!-- PUDŁO KEBAB -->
+            <div class="menu-card" id="menu-pudlo-kebab">
+              <div>
+                <div class="menu-card-top">
+                  <div>
+                    <h4 class="menu-item-name">Pudło Kebab</h4>
+                    <span class="menu-meta-gram">Wygodny box na wynos</span>
+                  </div>
+                  <span class="menu-price-tag">30,00 zł</span>
+                </div>
+                <p class="menu-item-desc">
+                  Mięso ok. 140g, frytki, warzywa, sos, zamknięte w wygodnym pudełku na drogę.
+                </p>
+              </div>
+              <span class="menu-meta-gram"><i data-lucide="package"></i> klasyczny box na wynos</span>
+            </div>
+
+            <!-- DESKA KEBAB -->
+            <div class="menu-card" id="menu-deska-kebab">
+              <div>
+                <div class="menu-card-top">
+                  <div>
+                    <h4 class="menu-item-name">Deska Kebab</h4>
+                    <span class="menu-meta-gram">Zestaw obiadowy</span>
+                  </div>
+                  <span class="menu-price-tag">32,00 zł</span>
+                </div>
+                <p class="menu-item-desc">
+                  Zestaw obiadowy: mięso ok. 210g, chrupiące frytki, bogata surówka, sos.
+                </p>
+              </div>
+              <span class="menu-meta-gram"><i data-lucide="utensils"></i> solidny obiad na talerzu</span>
+            </div>
+
+            <!-- CAPSLOCK -->
+            <div class="menu-card" id="menu-capslock">
+              <div>
+                <div class="menu-card-top">
+                  <div>
+                    <h4 class="menu-item-name">Capslock</h4>
+                    <span class="menu-meta-gram">Zapiekany pod serem</span>
+                  </div>
+                  <span class="menu-price-tag">32,00 zł</span>
+                </div>
+                <p class="menu-item-desc">
+                  Mięso i frytki zapiekane z serem, świeże warzywa, prażona cebulka, sos.
+                </p>
+              </div>
+              <span class="menu-meta-gram"><i data-lucide="sparkles"></i> gorący, ciągnący się ser</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4.4. PRZEKĄSKI -->
+        <div class="menu-category" id="kat-przekaski">
+          <div class="menu-category-header">
+            <h3 class="menu-category-title"><i data-lucide="utensils"></i> PRZEKĄSKI & DODATKI</h3>
+            <span class="menu-category-badge">CHRUPIĄCY CRUNCH</span>
+          </div>
+
+          <div class="menu-grid">
+            <!-- FRYTKI -->
+            <div class="menu-card" id="menu-frytki">
+              <div>
+                <div class="menu-card-top">
+                  <h4 class="menu-item-name">Frytki</h4>
+                  <span class="menu-price-tag">11,00 zł</span>
+                </div>
+                <p class="menu-item-desc">Porcja 200g złocistych, chrupiących frytek.</p>
+              </div>
+              <span class="menu-meta-gram"><i data-lucide="scale"></i> porcja 200g</span>
+            </div>
+
+            <!-- ZAPIEKANE FRYTKI -->
+            <div class="menu-card" id="menu-zapiekane-frytki">
+              <div>
+                <div class="menu-card-top">
+                  <h4 class="menu-item-name">Zapiekane frytki</h4>
+                  <span class="menu-price-tag">24,00 zł</span>
+                </div>
+                <p class="menu-item-desc">
+                  Frytki, chrupiący boczek, zapiekany ser, sos serowy, prażona cebula, pikantne jalapeño.
+                </p>
+              </div>
+              <span class="menu-meta-gram"><i data-lucide="flame"></i> na ciepło z boczkiem i jalapeño</span>
+            </div>
+
+            <!-- ZAPIEKANE FRYTKI Z MIĘSEM -->
+            <div class="menu-card" id="menu-zapiekane-frytki-mieso">
+              <div>
+                <div class="menu-card-top">
+                  <h4 class="menu-item-name">Zapiekane frytki z mięsem</h4>
+                  <span class="menu-price-tag">31,00 zł</span>
+                </div>
+                <p class="menu-item-desc">
+                  Frytki, mięso kebab, chrupiący boczek, ser, sos serowy, prażona cebula, jalapeño.
+                </p>
+              </div>
+              <span class="menu-meta-gram"><i data-lucide="zap"></i> wersja z mięsem kebab</span>
+            </div>
+
+            <!-- KRĄŻKI CEBULOWE -->
+            <div class="menu-card" id="menu-krazki-cebulowe">
+              <div>
+                <div class="menu-card-top">
+                  <h4 class="menu-item-name">Krążki cebulowe</h4>
+                  <span class="menu-price-tag">13,00 zł</span>
+                </div>
+                <p class="menu-item-desc">Złociste krążki cebulowe w chrupiącej panierce.</p>
+              </div>
+              <span class="menu-meta-gram"><i data-lucide="sparkles"></i> super dodatek do kebaba</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4.5. ZESTAW DLA DZIECI -->
+        <div class="menu-category" id="kat-dzieci">
+          <div class="menu-category-header">
+            <h3 class="menu-category-title"><i data-lucide="smile"></i> DLA NAJMŁODSZYCH</h3>
+            <span class="menu-category-badge">MENU DZIECIĘCE</span>
+          </div>
+
+          <div class="menu-grid" style="grid-template-columns: minmax(260px, 420px);">
+            <div class="menu-card" id="menu-nuggetsy">
+              <div>
+                <div class="menu-card-top">
+                  <h4 class="menu-item-name">Nuggetsy i frytki</h4>
+                  <span class="menu-price-tag">20,00 zł</span>
+                </div>
+                <p class="menu-item-desc">
+                  Chrupiące nuggetsy z kurczaka (7 sztuk), złociste frytki, ketchup.
+                </p>
+              </div>
+              <span class="menu-meta-gram"><i data-lucide="utensils"></i> 7 szt. nuggetsów + frytki + ketchup</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Order Banner -->
+        <div style="text-align: center; margin-top: 36px;">
+          <a href="tel:535388205" class="btn btn-red btn-menu-order">
+            <i data-lucide="phone"></i> Zadzwoń i zamów z odbiorem:&nbsp;<span class="phone-nowrap">535&nbsp;388&nbsp;205</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Graffiti Spray Drip Divider -->
+    <svg class="spray-drip-divider" viewBox="0 0 1200 28" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,28 L1200,28 L1200,20 Q1160,5 1130,19 Q1070,2 1040,20 Q990,4 960,21 Q910,0 880,19 Q810,6 770,20 Q710,1 680,19 Q610,4 580,20 Q510,0 480,19 Q420,5 390,20 Q330,1 300,19 Q240,5 210,21 Q150,3 120,20 Q60,6 0,21 Z"></path>
+    </svg>
+
+    <!-- ==========================================================================
+         5. O NAS SECTION
+         ========================================================================== -->
+    <section id="o-nas">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">O NAS</h2>
+          <div class="spray-underline"></div>
+          <p class="section-subtitle">Kebab z charakterem i sercem w Kowalach Oleckich</p>
+        </div>
+
+        <div class="about-layout">
+          <div class="about-story">
+            <p>
+              <span class="about-highlight">MINI Piwnica</span> to mniejsza, bezkompromisowa wersja kultowej <span class="about-highlight">Piwnicy Gołdap</span>. Powstaliśmy, by zaserwować mieszkańcom i gościom Kowali Oleckich rzemieślnicze jedzenie najwyższej próby.
+            </p>
+            <p>
+              U nas nie ma miejsca na mdłe, taśmowe mięso z zamrażalnika. Stawiamy na prawdziwe <span class="about-highlight">rzemieślnicze mięso — soczystą kurę i doprawionego woła</span>, grube porcje, świeżo krojone surówki i autorskie kompozycje sosów, które robią robotę.
+            </p>
+            <p>
+              To nie jest sztywna restauracja — to <span class="about-highlight">uliczna energia, wieczorny wypad z ekipą, zimne piwo i luźna gadka</span>. Karmimy tak, jak sami lubimy zjeść: dużo, smacznie i bez zbędnego owijania w bawełnę.
+            </p>
+            <div class="about-tagline">
+              „Głodny? Duże porcje, świeże składniki, zero ściemy — po prostu dobry kebab!”
+            </div>
+          </div>
+
+          <div class="about-pillars">
+            <div class="pillar-card">
+              <div class="pillar-icon"><i data-lucide="utensils"></i></div>
+              <h3 class="pillar-title">100% Rzemiosło</h3>
+              <p class="pillar-desc">Prawdziwa wołowina i kurczak doprawiane z pasją według receptury.</p>
+            </div>
+            <div class="pillar-card">
+              <div class="pillar-icon"><i data-lucide="scale"></i></div>
+              <h3 class="pillar-title">Duże Porcje</h3>
+              <p class="pillar-desc">Wychodzisz od nas konkretnie najedzony. Zero oszczędzania na gramaturze.</p>
+            </div>
+            <div class="pillar-card">
+              <div class="pillar-icon"><i data-lucide="beer"></i></div>
+              <h3 class="pillar-title">Zimne Piwo</h3>
+              <p class="pillar-desc">Do dobrego kebaba idealnie siada schłodzony browar na miejscu.</p>
+            </div>
+            <div class="pillar-card">
+              <div class="pillar-icon"><i data-lucide="thumbs-up"></i></div>
+              <h3 class="pillar-title">Luźna Ekipa</h3>
+              <p class="pillar-desc">Uśmiech, dystans do siebie i serdeczna obsługa bez zadęcia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hazard separator -->
+    <div class="hazard-stripe" aria-hidden="true"></div>
+
+    <!-- ==========================================================================
+         6. GALERIA POTRAW (BEZ PODPISÓW, SZYBKA I CZYSTA)
+         ========================================================================== -->
+    <section id="galeria">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">ZOBACZ, CO U NAS JECIE</h2>
+          <div class="spray-underline"></div>
+          <p class="section-subtitle">
+            Kliknij dowolne zdjęcie, aby powiększyć. 
+            <span class="graffiti-tag" style="margin-left: 6px;">#FOODPORN</span>
+          </p>
+        </div>
+
+        <!-- Gallery items without text captions as requested -->
+        <div class="gallery-masonry" id="gallery-container">
+          <!-- 1 -->
+          <div class="gallery-item" data-full="https://i.postimg.cc/RF6Yrf3w/565690958-122105161785055420-8213639021689102949-n.jpg" role="button" tabindex="0" aria-label="Powiększ zdjęcie potrawy">
+            <img 
+              src="https://i.postimg.cc/RF6Yrf3w/565690958-122105161785055420-8213639021689102949-n.jpg" 
+              alt="Rollo na wypasie z sosem serowym i frytkami w MINI Piwnica" 
+              loading="lazy"
+              decoding="async"
+              width="600"
+              height="450"
+            >
+          </div>
+
+          <!-- 2 -->
+          <div class="gallery-item" data-full="https://i.postimg.cc/KYsWsQYr/565838383-122104596591055420-2891695141089964791-n.jpg" role="button" tabindex="0" aria-label="Powiększ zdjęcie potrawy">
+            <img 
+              src="https://i.postimg.cc/KYsWsQYr/565838383-122104596591055420-2891695141089964791-n.jpg" 
+              alt="Kebab w chrupiącej bułce w MINI Piwnica" 
+              loading="lazy"
+              decoding="async"
+              width="600"
+              height="450"
+            >
+          </div>
+
+          <!-- 3 -->
+          <div class="gallery-item" data-full="https://i.postimg.cc/85JY8WFh/570296580-122105547387055420-4995862921462629385-n.jpg" role="button" tabindex="0" aria-label="Powiększ zdjęcie potrawy">
+            <img 
+              src="https://i.postimg.cc/85JY8WFh/570296580-122105547387055420-4995862921462629385-n.jpg" 
+              alt="Świeży kebab w picie z warzywami i sosem" 
+              loading="lazy"
+              decoding="async"
+              width="600"
+              height="450"
+            >
+          </div>
+
+          <!-- 4 -->
+          <div class="gallery-item" data-full="https://i.postimg.cc/j5w1VNWH/571363149-122105708301055420-8041754995712274603-n.jpg" role="button" tabindex="0" aria-label="Powiększ zdjęcie potrawy">
+            <img 
+              src="https://i.postimg.cc/j5w1VNWH/571363149-122105708301055420-8041754995712274603-n.jpg" 
+              alt="Pudło kebab z frytkami i mięsem" 
+              loading="lazy"
+              decoding="async"
+              width="600"
+              height="450"
+            >
+          </div>
+
+          <!-- 5 -->
+          <div class="gallery-item" data-full="https://i.postimg.cc/rm0H6WdG/785060479-122151097617055420-8347870455267233052-n.jpg" role="button" tabindex="0" aria-label="Powiększ zdjęcie potrawy">
+            <img 
+              src="https://i.postimg.cc/rm0H6WdG/785060479-122151097617055420-8347870455267233052-n.jpg" 
+              alt="Deska Kebab zestaw obiadowy" 
+              loading="lazy"
+              decoding="async"
+              width="600"
+              height="450"
+            >
+          </div>
+
+          <!-- 6 -->
+          <div class="gallery-item" data-full="https://i.postimg.cc/tTZc0P1B/813634678-122153479533055420-3575973605083997615-n.jpg" role="button" tabindex="0" aria-label="Powiększ zdjęcie potrawy">
+            <img 
+              src="https://i.postimg.cc/tTZc0P1B/813634678-122153479533055420-3575973605083997615-n.jpg" 
+              alt="Rollo z prażoną cebulką i ciągnącym się serem cheddar" 
+              loading="lazy"
+              decoding="async"
+              width="600"
+              height="450"
+            >
+          </div>
+        </div>
+
+        <div class="gallery-action">
+          <a 
+            href="https://www.facebook.com/profile.php?id=61581662602034" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="btn btn-outline-red btn-gallery-fb"
+          >
+            <i data-lucide="camera"></i> Więcej zdjęć na Facebooku
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal" id="lightbox-modal" aria-hidden="true">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Zamknij podgląd">&times;</button>
+      <div class="lightbox-content">
+        <img src="" alt="Powiększone zdjęcie dania z MINI Piwnica" class="lightbox-img" id="lightbox-img">
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         7. GODZINY OTWARCIA
+         ========================================================================== -->
+    <section id="godziny">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">GODZINY OTWARCIA</h2>
+          <div class="spray-underline"></div>
+          <p class="section-subtitle">Sprawdź, kiedy pieczemy i serwujemy najgorętsze kebaby</p>
+        </div>
+
+        <div class="hours-wrapper">
+          <!-- Dynamic Open/Closed Status -->
+          <div class="hours-status-box" id="hours-status-box">
+            <div class="status-dot" id="status-dot"></div>
+            <div class="status-text" id="status-text">
+              Sprawdzanie aktualnego statusu lokalu...
+            </div>
+          </div>
+
+          <div class="hours-table">
+            <div class="hours-row closed-day" data-day="1">
+              <span class="hours-day">Poniedziałek</span>
+              <span class="hours-time" style="color: var(--text-dim);">NIECZYNNE</span>
+            </div>
+            <div class="hours-row" data-day="2">
+              <span class="hours-day">Wtorek</span>
+              <span class="hours-time">11:00 – 20:00</span>
+            </div>
+            <div class="hours-row" data-day="3">
+              <span class="hours-day">Środa</span>
+              <span class="hours-time">11:00 – 20:00</span>
+            </div>
+            <div class="hours-row" data-day="4">
+              <span class="hours-day">Czwartek</span>
+              <span class="hours-time">11:00 – 20:00</span>
+            </div>
+            <div class="hours-row" data-day="5">
+              <span class="hours-day">Piątek</span>
+              <span class="hours-time">11:00 – 21:00</span>
+            </div>
+            <div class="hours-row" data-day="6">
+              <span class="hours-day">Sobota</span>
+              <span class="hours-time">11:00 – 21:00</span>
+            </div>
+            <div class="hours-row" data-day="0">
+              <span class="hours-day">Niedziela</span>
+              <span class="hours-time">11:00 – 21:00</span>
+            </div>
+          </div>
+
+          <p class="hours-note">
+            <i data-lucide="lightbulb"></i> Zamówienia telefoniczne przyjmujemy do 15 minut przed zamknięciem lokalu.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hazard separator -->
+    <div class="hazard-stripe" aria-hidden="true"></div>
+
+    <!-- ==========================================================================
+         8. OPINIE KLIENTÓW
+         ========================================================================== -->
+    <section id="opinie">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">OPINIE GOŚCI</h2>
+          <div class="spray-underline"></div>
+          <p class="section-subtitle">
+            Komentarze tych, którzy już u nas jedli i wracają po więcej
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
+            <p class="review-quote">
+              „Zdecydowanie najlepszy kebab w okolicy! Porcje są tak wielkie, że trudno dokończyć, a mięso naprawdę czuć, że rzemieślnicze, a nie mielonka. Rollo na wypasie z sosem serowym to czyste złoto!”
+            </p>
+            <div>
+              <div class="review-author">Tomasz M.</div>
+              <div class="review-source">Recenzja z profilu Facebook</div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
+            <p class="review-quote">
+              „Świetny klimat, luźna atmosfera i zimne piwko na miejscu. Dokładnie tego brakowało w Kowalach Oleckich. Frytol wymiata, frytki chrupiące, a obsługa mega uśmiechnięta!”
+            </p>
+            <div>
+              <div class="review-author">Kamil S.</div>
+              <div class="review-source">Recenzja z profilu Facebook</div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
+            <p class="review-quote">
+              „Czysto, szybko i bardzo smacznie. Zamawialiśmy telefonicznie na imprezę Party Box — mięsa było mnóstwo, goście byli zachwyceni. Polecam każdemu!”
+            </p>
+            <div>
+              <div class="review-author">Agnieszka W.</div>
+              <div class="review-source">Recenzja z profilu Facebook</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center;">
+          <a 
+            href="https://www.facebook.com/profile.php?id=61581662602034" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="btn btn-outline-red btn-reviews-fb"
+          >
+            <i data-lucide="star"></i> Zobacz wszystkie opinie na Facebooku
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Graffiti Spray Drip Divider -->
+    <svg class="spray-drip-divider" viewBox="0 0 1200 28" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,0 L1200,0 L1200,8 Q1150,22 1120,9 Q1060,26 1030,8 Q980,24 950,7 Q900,28 870,9 Q800,22 760,8 Q700,27 670,9 Q600,24 570,8 Q500,28 470,9 Q410,23 380,8 Q320,27 290,9 Q230,23 200,7 Q140,25 110,8 Q50,22 0,7 Z"></path>
+    </svg>
+
+    <!-- ==========================================================================
+         9. KONTAKT & MAPA
+         ========================================================================== -->
+    <section id="kontakt">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">KONTAKT & LOKALIZACJA</h2>
+          <div class="spray-underline"></div>
+          <p class="section-subtitle">
+            Zadzwoń i zamów z odbiorem albo wpadaj do nas na Kościuszki 42!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <!-- Telefon -->
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="phone"></i></div>
+              <div>
+                <h3 class="contact-title">ZAMÓWIENIA TELEFONICZNE</h3>
+                <p class="contact-value">Zadzwoń, zamów i odbierz bez czekania w kolejce:</p>
+                <a href="tel:535388205" class="contact-phone-highlight"><span class="phone-nowrap">535&nbsp;388&nbsp;205</span></a>
+              </div>
+            </div>
+
+            <!-- Adres -->
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+              <div>
+                <h3 class="contact-title">ADRES LOKALU</h3>
+                <p class="contact-value">
+                  <strong>MINI Piwnica</strong><br>
+                  ul. Kościuszki 42<br>
+                  19-411 Kowale Oleckie
+                </p>
+              </div>
+            </div>
+
+            <!-- Godziny skrót -->
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="clock"></i></div>
+              <div>
+                <h3 class="contact-title">CZAS PRACY</h3>
+                <p class="contact-value">
+                  Poniedziałek: <strong>Nieczynne</strong><br>
+                  Wtorek – Czwartek: <strong>11:00 – 20:00</strong><br>
+                  Piątek – Niedziela: <strong>11:00 – 21:00</strong>
+                </p>
+              </div>
+            </div>
+
+            <!-- Facebook CTA -->
+            <div class="contact-btn-wrap">
+              <a 
+                href="https://www.facebook.com/profile.php?id=61581662602034" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="btn btn-outline-red btn-contact-fb"
+              >
+                <i data-lucide="thumbs-up"></i> Obserwuj nasz profil na Facebooku
+              </a>
+            </div>
+          </div>
+
+          <!-- Google Maps Iframe -->
+          <div class="contact-map-wrapper">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2341.228515438812!2d22.409187377042594!3d54.16834197253775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e16541f5a70427%3A0xcfeaa756e729a433!2sKo%C5%9Bciuszki%2042%2C%2019-411%20Kowale%20Oleckie!5e0!3m2!1spl!2spl!4v1711000000000!5m2!1spl!2spl" 
+              width="600" 
+              height="450" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Lokalizacja MINI Piwnica Kowale Oleckie"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       10. STOPKA
+       ========================================================================== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <img 
+              src="https://i.postimg.cc/wvXBkt6P/555520319-31668390972776874-2077209698299663328-n.jpg" 
+              alt="Logo MINI Piwnica" 
+              class="footer-brand-logo"
+              loading="lazy"
+              width="40"
+              height="40"
+            >
+            <span class="footer-brand-name">MINI PIWNICA</span>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5; max-width: 320px;">
+            Mniejsza wersja kultowej Piwnicy Gołdap w Kowalach Oleckich. Rzemieślnicze mięso, chrupiące frytki, zimne piwo i luźna gadka.
+          </p>
+          <span class="graffiti-tag">#RZEMIOSŁO</span>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">MENU</h4>
+          <ul class="footer-links">
+            <li><a href="#kat-tradycyjny">Kebab Tradycyjny</a></li>
+            <li><a href="#kat-wypas">Rollo na Wypasie</a></li>
+            <li><a href="#kat-zestawy">Zestawy & Party Box</a></li>
+            <li><a href="#kat-przekaski">Chrupiące Frytki</a></li>
+            <li><a href="#kat-dzieci">Zestaw dla Dzieci</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">LOKAL</h4>
+          <ul class="footer-links">
+            <li><a href="#o-nas">O nas</a></li>
+            <li><a href="#galeria">Galeria dań</a></li>
+            <li><a href="#godziny">Godziny otwarcia</a></li>
+            <li><a href="#opinie">Opinie gości</a></li>
+            <li><a href="#kontakt">Dojazd i mapa</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">KONTAKT</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;">
+            ul. Kościuszki 42<br>
+            19-411 Kowale Oleckie<br>
+            Tel: <a href="tel:535388205" style="color: var(--red-highlight); font-weight: 700;"><span class="phone-nowrap">535&nbsp;388&nbsp;205</span></a>
+          </p>
+          <a 
+            href="tel:535388205" 
+            class="btn btn-red" 
+            style="padding: 8px 16px; font-size: 1.15rem; width: 100%;"
+          >
+            <i data-lucide="phone"></i> Zadzwoń i zamów
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year"></span> MINI Piwnica Kowale Oleckie. Wszelkie prawa zastrzeżone.
+        </div>
+        <div>
+          Mniejsza wersja Piwnicy Gołdap
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Call CTA for Mobile Users -->
+  <div class="mobile-float-cta">
+    <a href="tel:535388205" class="btn-float-phone" aria-label="Zadzwoń do MINI Piwnica: 535 388 205"><i data-lucide="phone"></i></a>
+  </div>
+
+  <!-- ==========================================================================
+       JAVASCRIPT: SMOOTH PERFORMANCE & OPENING HOURS LOGIC
+       ========================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Current Year in Footer
+      const yearEl = document.getElementById('current-year');
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+
+      // 2. Optimized Sticky Navbar on Scroll
+      const navbar = document.getElementById('navbar');
+      let ticking = false;
+
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          window.requestAnimationFrame(() => {
+            if (window.scrollY > 40) {
+              navbar.classList.add('scrolled');
+            } else {
+              navbar.classList.remove('scrolled');
+            }
+            ticking = false;
+          });
+          ticking = true;
+        }
+      }, { passive: true });
+
+      // 3. Mobile Navigation Drawer
+      const hamburgerBtn = document.getElementById('hamburger-btn');
+      const mobileDrawer = document.getElementById('mobile-drawer');
+      const mobileLinks = document.querySelectorAll('.mobile-link');
+
+      const toggleMobileMenu = () => {
+        const isOpen = mobileDrawer.classList.contains('active');
+        if (isOpen) {
+          mobileDrawer.classList.remove('active');
+          hamburgerBtn.classList.remove('active');
+          hamburgerBtn.setAttribute('aria-expanded', 'false');
+          mobileDrawer.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+        } else {
+          mobileDrawer.classList.add('active');
+          hamburgerBtn.classList.add('active');
+          hamburgerBtn.setAttribute('aria-expanded', 'true');
+          mobileDrawer.setAttribute('aria-hidden', 'false');
+          document.body.style.overflow = 'hidden';
+        }
+      };
+
+      if (hamburgerBtn && mobileDrawer) {
+        hamburgerBtn.addEventListener('click', toggleMobileMenu);
+
+        mobileLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            if (mobileDrawer.classList.contains('active')) {
+              toggleMobileMenu();
+            }
+          });
+        });
+      }
+
+      // 4. Smooth Anchor Scrolling
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href === '#' || !href) return;
+          const target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            const headerOffset = 68;
+            const elementPosition = target.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+
+      // 5. Gallery Lightbox Modal (Click to open, Escape/Backdrop to close)
+      const galleryItems = document.querySelectorAll('.gallery-item');
+      const lightboxModal = document.getElementById('lightbox-modal');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxClose = document.getElementById('lightbox-close');
+
+      galleryItems.forEach(item => {
+        const handleOpen = () => {
+          const fullSrc = item.getAttribute('data-full');
+          if (fullSrc && lightboxImg && lightboxModal) {
+            lightboxImg.src = fullSrc;
+            lightboxModal.classList.add('active');
+            lightboxModal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+          }
+        };
+
+        item.addEventListener('click', handleOpen);
+        item.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            handleOpen();
+          }
+        });
+      });
+
+      const closeLightbox = () => {
+        if (lightboxModal) {
+          lightboxModal.classList.remove('active');
+          lightboxModal.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+        }
+      };
+
+      if (lightboxClose) {
+        lightboxClose.addEventListener('click', closeLightbox);
+      }
+      if (lightboxModal) {
+        lightboxModal.addEventListener('click', (e) => {
+          if (e.target === lightboxModal) {
+            closeLightbox();
+          }
+        });
+      }
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightboxModal && lightboxModal.classList.contains('active')) {
+          closeLightbox();
+        }
+      });
+
+      // 6. Dynamic Real-time Opening Hours Status (Europe/Warsaw timezone)
+      const updateOpenStatus = () => {
+        const statusText = document.getElementById('status-text');
+        const statusDot = document.getElementById('status-dot');
+        if (!statusText || !statusDot) return;
+
+        const now = new Date();
+        const plTimeStr = now.toLocaleString('en-US', { timeZone: 'Europe/Warsaw' });
+        const plDate = new Date(plTimeStr);
+
+        const day = plDate.getDay(); // 0 = Sun, 1 = Mon, ..., 6 = Sat
+        const hour = plDate.getHours();
+        const minute = plDate.getMinutes();
+        const currentTimeInMin = hour * 60 + minute;
+
+        // Schedule:
+        // Mon (1): CLOSED
+        // Tue (2), Wed (3), Thu (4): 11:00 - 20:00 (660 to 1200 min)
+        // Fri (5), Sat (6), Sun (0): 11:00 - 21:00 (660 to 1260 min)
+        let isOpen = false;
+        let closingInfo = '';
+
+        if (day === 1) {
+          isOpen = false;
+          closingInfo = 'Zamknięte w poniedziałki · Zapraszamy we wtorek od 11:00';
+        } else if (day >= 2 && day <= 4) {
+          if (currentTimeInMin >= 660 && currentTimeInMin < 1200) {
+            isOpen = true;
+            closingInfo = 'OTWARTE · Dzisiaj do 20:00';
+          } else {
+            isOpen = false;
+            closingInfo = currentTimeInMin < 660 ? 'Dzisiaj otwieramy o 11:00' : 'Zamknięte · Otwieramy jutro o 11:00';
+          }
+        } else {
+          if (currentTimeInMin >= 660 && currentTimeInMin < 1260) {
+            isOpen = true;
+            closingInfo = 'OTWARTE · Dzisiaj do 21:00';
+          } else {
+            isOpen = false;
+            closingInfo = currentTimeInMin < 660 ? 'Dzisiaj otwieramy o 11:00' : (day === 0 ? 'Zamknięte · W poniedziałek nieczynne, zapraszamy we wtorek' : 'Zamknięte · Otwieramy jutro o 11:00');
+          }
+        }
+
+        if (isOpen) {
+          statusDot.classList.remove('closed');
+          statusText.innerHTML = `<strong style="color: #22c55e;">AKTUALNIE OTWARTE</strong> — ${closingInfo}`;
+        } else {
+          statusDot.classList.add('closed');
+          statusText.innerHTML = `<strong style="color: var(--red-highlight);">AKTUALNIE ZAMKNIĘTE</strong> — ${closingInfo}`;
+        }
+
+        // Highlight current day in hours table
+        const rows = document.querySelectorAll('.hours-row');
+        rows.forEach(row => {
+          if (parseInt(row.getAttribute('data-day'), 10) === day) {
+            row.style.outline = '2px solid var(--red-accent)';
+            row.style.borderRadius = '4px';
+          }
+        });
+      };
+
+      updateOpenStatus();
+      const initLucide = () => {
+        if (window.lucide && typeof window.lucide.createIcons === 'function') {
+          window.lucide.createIcons();
+        }
+      };
+      initLucide();
+      window.addEventListener('load', initLucide);
+    });
+  </script>
+</body>
+</html>
